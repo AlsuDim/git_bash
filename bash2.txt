@@ -1,0 +1,33 @@
+1 pwd
+2 cd AlsuDim 
+3 mkdir test_3
+4 touch file_4, touch file_5, touch file_6 >> echo row1, row2, row3, row4 >> file_4; -4 раза
+>> echo row1, row2, row3, row4 >> file_5; -4 раза
+>> echo row1, row2, row3, row4 >> file_6; -4 раза
+
+5 grep "row2" file_5
+6 cd ..  потом grep "row" test_3
+7 grep -c "row" file_6
+8 find ~/test_3 -type f -name 5
+9 find . -type f -name 5 -delete
+10 echo test > file_4
+11 sed -i 's/test/fail/g' file_4
+12 echo "test" >> file_4
+13 ps
+14 kill 666
+15 ping rusau.net
+16 ping -c 5 rusau.net
+17 curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available,pending,sold" -H "accept: application/json"
+
+18 curl -X POST "https://petstore.swagger.io/v2/user" \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 12345,
+  "username": "new",
+  "firstName": "Fairy",
+  "lastName": "Lazy",
+  "email": "new@example.com",
+  "password": "password123",
+  "phone": "1234567890",
+  "userStatus": 1
+}'
