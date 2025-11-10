@@ -1,0 +1,20 @@
+1 pwd
+2 cd AlsuDim 
+3 pwd или ls проверить, что там есть (если уже точно знаю где нахожусь)
+4 mkdir test1
+5 cd test1
+6 touch file_1, touch file_2, touch file_3
+7 ls test1
+8 cd ..
+9 mkdir test2
+10 cd AlsuDim > rm -r test2
+11 cd test1 > rmdir file_2
+12 cd AlsuDim > mkdir test3 > touch file_4, touch file_5
+13 cd AlsuDim > rm -r test3
+14 mkdir test4
+15 mv test1/file_1 test4; mv test1/file_3 test4
+16 echo line >> file_1; echo line >> file_1; echo line >> file_1  
+17 ls file_1
+18 echo line >> file_3; echo line >> file_3; echo line >> file_3
+19 cat file_1 file_3
+20 nano file_1 и там редактируем и при выходе сохраняем 
